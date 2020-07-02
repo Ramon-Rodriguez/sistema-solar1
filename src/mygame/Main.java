@@ -103,8 +103,8 @@ public class Main extends SimpleApplication {
         nodeSol.attachChild(geomSol);
         
         nodeTierra.setLocalTranslation(5f, 0, 0f);
-        nodeMarte.setLocalTranslation(9f, 0, 0f);//posicio de la figura en las translaciones(x ,y ,z)
-        nodeJupiter.setLocalTranslation(15f, 0, 0f);
+        nodeMarte.setLocalTranslation(0, 0, 8f);//posicio de la figura en las translaciones(x ,y ,z)
+        nodeJupiter.setLocalTranslation(15f, 0, 7f);
         
         pivot.attachChild(nodeSol);
         pivot.attachChild(nodeTierra);
@@ -138,9 +138,9 @@ public class Main extends SimpleApplication {
         rootNode.getChild("nodo_pivote").rotate(0,tpf/3, 0);
                        
         
-        rootNode.getChild("nodo_marte").rotate(0,tpf*0.5f, 0);//se indica la velocidad del nodo con respceto al objeto.
+        rootNode.getChild("nodo_marte").rotate(0,2,0);//se indica la velocidad del nodo con respceto al objeto.
         System.out.println(tpf);//se visualizara el objeto ya creado 
-        rootNode.getChild("nodo_jupiter").rotate(0,tpf*1,0);//se indica la velocidad del nodo con respceto al objeto.
+        rootNode.getChild("nodo_jupiter").rotate(0,0,3);//se indica la velocidad del nodo con respceto al objeto.
         System.out.println(tpf);//se visualizara el objeto ya creado 
        
         
